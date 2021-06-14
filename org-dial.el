@@ -1,7 +1,7 @@
 ;;; -*- lexical-binding: t; -*-
 
-;;; org-dial.el --- Provide org links to dial with the softphone
-;;; application linphone
+;;; org-dial.el --- Provide org links to dial with softphone
+;;; applications on Windows
 
 ;; Copyright (C) 2011-2014  Michael Strey
 
@@ -39,7 +39,7 @@
   :group 'org)
 
 ;; In windows, calling explorer "tel:12345" will prompt to open with the default dialler 
-(defcustom org-dial-program "explorer "
+(defcustom org-dial-program "explorer tel:"
   "Name of the softphone executable used to dial a phone number in a `tel:' link."
   :type '(string)
   :group 'org-dial)
